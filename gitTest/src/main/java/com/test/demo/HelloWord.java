@@ -21,4 +21,11 @@ public class HelloWord {
         System.out.println(sdf.format(new Date()));
     }
 
+    @Test
+    public void test02() {
+        for (int i = 0; i < 10; i++) {
+            System.out.println("helloword");
+        }
+    }
+
 }
