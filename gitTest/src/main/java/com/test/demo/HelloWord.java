@@ -1,5 +1,10 @@
 package com.test.demo;
 
+import org.junit.Test;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * @author:wanghe
  * @title:com.test.demo
@@ -8,5 +13,12 @@ package com.test.demo;
  * @Description:TODO
  */
 public class HelloWord {
+
+    @Test
+    public void test() {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+
+        System.out.println(sdf.format(new Date()));
+    }
 
 }
