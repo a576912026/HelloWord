@@ -4,6 +4,8 @@ import org.junit.Test;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author:wanghe
@@ -25,6 +27,17 @@ public class HelloWord {
     public void test02() {
         for (int i = 0; i < 10; i++) {
             System.out.println("helloword");
+        }
+    }
+
+    @Test
+    public void test03() {
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("name", "张三");
+        map.put("age", "20");
+        for (String key : map.keySet()) {
+            System.out.println(key);
+
         }
     }
 
